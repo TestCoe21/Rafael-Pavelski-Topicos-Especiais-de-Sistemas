@@ -30,8 +30,7 @@ function debitoTexto() {
 
 function sonarTexto() {
     let link = document.createElement("a");
-    window.location.href = "https://blog.myscrumhalf.com/sonar-apoiando-a-qualidade-do-desenvolvimento-de-software/";
-    link.dataset['target'] = '_blank';  
+    window.open("https://blog.myscrumhalf.com/sonar-apoiando-a-qualidade-do-desenvolvimento-de-software/");
     }
     const sonarFor = document.getElementsByClassName('sonar');
     for(var i = 0; i < sonarFor.length ; i++) {
@@ -40,7 +39,7 @@ function sonarTexto() {
 
 function jenkinsTexto() {
     let link = document.createElement("a");
-    window.location.href = "https://blog.mandic.com.br/artigos/5-perspectivas-para-impulsionar-a-produtividade-usando-jenkins/";
+    window.open("https://blog.mandic.com.br/artigos/5-perspectivas-para-impulsionar-a-produtividade-usando-jenkins/");
     }
     const jenkinsFor = document.getElementsByClassName('jenkins');
     for(var i = 0; i < jenkinsFor.length ; i++) {
