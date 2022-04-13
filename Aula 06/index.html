@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form name="media">
+            <h1>Calcule a média do aluno</h1>
+            <div>
+                <label for="nome">Nome do aluno:</label><br>
+                <input type="text" id="nome" required="required" name="nome">
+            </div><br>
+            <div>
+                <label for="nota1">Nota 1:</label><br>
+                <input type="number" id="nota1" required="required" name="nota1" min="0" max="10">
+            </div><br>
+            <div>
+                <label for="nota2">Nota 2:</label><br>
+                <input type="number" id="nota2" required="required" name="nota2" min="0" max="10">
+            </div><br>
+            <div>
+                <button type="submit" class="enviar" value="enviar" onclick="Enviar();">Calcular média</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
