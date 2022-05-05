@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vrau</title>
+    <title>Como usar o jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <div><h1>Lista de Nomes</h1></div>
+        <div> 
+            <ul>
+                <li>Darth Vader</li>
+                <li>Maria Catarina</li>
+                <li>Irmão do Jorel</li>
+                <li>Pica Pau</li>
+                <li>Batman</li>
+            </ul> 
+        </div>
+        <div> 
+                <button id="btn"> Click Aqui </button>
+        </div>
+    <script> 
+        $('#btn').on("click", botao)
+        function botao(){
+            $('h1').fadeOut("2000").fadeIn("2000")
+            $('h1').append(" dos Filmes e Série")
+            $('li').css({'color' : 'blue'})
+            $('#btn').remove()
+        }
+    </script>
 </body>
 </html>
